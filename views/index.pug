@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content           
+  ul
+    each val in messages
+      li= val.title
+      li= val.message
+      br

@@ -1,0 +1,20 @@
+//- layout.pug
+html
+  head
+    title My Site - #{title}
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css', type='text/css' )
+    block navbar
+        nav.navbar
+            div.navbar-menu
+                    a.navbar-item(href="/createMessage")
+                        h1 Create Message
+                    a.navbar-item(href="/indexMessages")
+                        h1 Index Messages
+                    a.navbar-item(href="/randomText")
+                        h1 Random Text
+  body
+    block content
+
+    h2 sidebar
+    block foot
+        p some footer content

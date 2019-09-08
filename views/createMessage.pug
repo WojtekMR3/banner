@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content                    
+  body
+      form(action="/createMessage" method="POST")
+        p Title:
+          input(type="text" name="title" placeholder="")
+        p Message:
+          input(type="text" name="body" placeholder="")
+        input(value='Submit', type="submit")
